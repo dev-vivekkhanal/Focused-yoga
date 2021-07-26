@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+body {
+  margin: 1vh 10vw 1vh 10vw;
+}
+
+nav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 80vw;
+  min-height: 8vh;
+  font-size: 1.2rem;
+}
+
+.symbol {
+  background-image: linear-gradient(rgb(255, 230, 0), rgb(255, 81, 0));
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.logo {
+  right: auto;
+  margin: auto auto auto 1vw;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  position: relative;
+  margin: 0px 0px 0px auto;
+  width: 30%;
+}
+
+nav li {
+  margin: auto;
+  list-style: none;
+  padding: 0.2rem 0.9rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(87, 85, 85);
+  font-weight: 500;
+}
+
+.login {
+  color: rgba(255, 123, 0, 0.973);
+}
+
+section {
+  display: flex;
+}
+
+.text {
+  margin: 30vh 50vw auto 0vw;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.download-button {
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  background: rgb(255, 81, 0);
+  color: white;
+  padding: 1rem 1rem;
+  text-align: center;
+  width: 8rem;
+  cursor: pointer;
+  margin: 1vh auto;
+}
+
+.yoga-img > img {
+  position: absolute;
+  right: 10vw;
+  top: 20vh;
+  background-image: linear-gradient(rgb(255, 230, 0), rgb(255, 81, 0));
+  border-radius: 50%;
+  height: auto;
+  width: 40vw;
+  z-index: -2;
+}
+
+.circle1 {
+  z-index: -1;
+  position: absolute;
+  left: -10vw;
+  top: 30vh;
+  height: 90vh;
+  width: 50vw;
+  background-color: rgb(219, 213, 213);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.circle2 {
+  z-index: -1;
+  position: absolute;
+  right: -10vw;
+  bottom: -10vh;
+  height: 50vh;
+  width: 30vw;
+  background-color: rgb(219, 213, 213);
+  border-radius: 50%;
+  display: inline-block;
+}
