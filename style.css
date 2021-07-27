@@ -70,6 +70,10 @@ h1 {
   font-size: 5rem;
 }
 
+.text > p {
+  color: rgb(43, 42, 42);
+}
+
 .download-button {
   display: inline-block;
   border-radius: 4px;
