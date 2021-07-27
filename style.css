@@ -6,96 +6,118 @@
   overflow: hidden;
 }
 
-body {
-  margin: 1vh 10vw 1vh 10vw;
-}
-
 nav {
   display: flex;
   justify-content: left;
-  align-items: center;
-  width: 80vw;
-  min-height: 8vh;
-  font-size: 1.2rem;
-}
-
-.symbol {
-  background-image: linear-gradient(rgb(255, 230, 0), rgb(255, 81, 0));
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-}
-
-.logo {
-  right: auto;
-  margin: auto auto auto 1vw;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-nav ul {
-  display: flex;
-  position: relative;
-  margin: 0px 0px 0px auto;
-  width: 30%;
-}
-
-nav li {
-  margin: auto;
-  list-style: none;
-  padding: 0.2rem 0.9rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: rgb(87, 85, 85);
-  font-weight: 500;
-}
-
-.login {
-  color: rgba(255, 123, 0, 0.973);
-}
-
-section {
-  display: flex;
-}
-
-.text {
-  margin: 30vh 50vw auto 0vw;
-  font-size: 2.4rem;
-  font-weight: 500;
-}
-
-h1 {
-  font-size: 5rem;
-}
-
-.text > p {
-  color: rgb(43, 42, 42);
-}
-
-.download-button {
-  display: inline-block;
-  border-radius: 4px;
-  font-size: 1.2rem;
-  background: rgb(255, 81, 0);
-  color: white;
-  padding: 1rem 1rem;
   text-align: center;
-  width: 8rem;
-  cursor: pointer;
-  margin: 1vh auto;
+  width: 80vw;
+  height: 10vh;
+  margin: 0px 10vw;
 }
 
-.yoga-img > img {
-  position: absolute;
-  right: 10vw;
-  top: 20vh;
+.logo-icon {
   background-image: linear-gradient(rgb(255, 230, 0), rgb(255, 81, 0));
+  width: 3vw;
+  height: 5vh;
   border-radius: 50%;
+  margin: auto 0;
+}
+
+.logo-name {
+  margin: auto 35vw auto 1vw;
+  font-size: calc(1.5rem);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 2.5vw;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(59, 59, 59);
+  font-size: calc(1.2rem);
+  font-weight: 500;
+}
+
+li:nth-child(4) a {
+  color: orange;
+}
+
+.nav-links li a:hover {
+  color: orange;
+}
+
+li:nth-child(4) a:hover {
+  color: black;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  width: 80vw;
+  height: 90vh;
+  margin: 0px 10vw;
+  overflow: hidden;
+}
+
+.main-text h1 {
+  margin-top: 30vh;
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main-text p {
+  margin-top: 2vh;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgba(29, 28, 28, 0.884);
+}
+
+button {
+  margin-top: 2vh;
+  text-align: center;
+  padding: 1.5vh 0;
+  width: 120px;
+  height: 60px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  background: rgb(255, 81, 0);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 5px 10px #c5c3c3;
+}
+
+.images {
+  background-image: linear-gradient(rgb(255, 230, 0), rgb(255, 81, 0));
+  margin: 10vh 0vw;
   height: auto;
   width: 40vw;
-  z-index: -2;
+  border-radius: 50%;
+  overflow: visible;
+}
+
+img {
+  margin-top: 10vh;
+  height: auto;
+  width: 40vw;
 }
 
 .circle1 {
@@ -120,16 +142,4 @@ h1 {
   background-color: rgb(219, 213, 213);
   border-radius: 50%;
   display: inline-block;
-}
-
-ul > li > a:hover {
-  color: rgb(255, 166, 0);
-}
-
-.login:hover {
-  color: black;
-}
-
-.download-button:hover {
-  font-size: 1.219rem;
 }
