@@ -1,9 +1,15 @@
+
+/* Basic  Start */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
-  
+  font-family: Montserrat, sans-serif;  
+}
+
+body {
+  overflow: hidden;
 }
 
 .container {
@@ -11,9 +17,14 @@
   margin: 0 10vw;
 }
 
+/* Basic End */
+
+
+/* Nav Bar Elements Start */
 nav {
   background: rgb(245, 246, 250);
 }
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -32,10 +43,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   width: 35vw;
   height: 8vh;
-
   overflow: visible;
 }
 
@@ -64,20 +73,37 @@ li a:hover {
   transition: 0.1s ease-in;
 }
 
-body {
-  overflow: hidden;
+.menu {
+  display: none;
+  margin-right: 1vw;
+  height: 50px;
+  width: 30px;
+  cursor: pointer;
 }
 
-.main-text {
-  width: 40vw;
-  height: auto;
+.bar {
+  margin: auto;
+  height: 5px;
+  width: 30px;
+  margin-top: 5px;
+  background: rgb(236, 137, 8);
 }
 
+/* Nav Bar Elements End */
+
+
+/* First Section Start */
 .main {
   display: flex;
   justify-content: space-between;
   height: 90vh;
   align-items: center;
+}
+
+
+.main-text {
+  width: 40vw;
+  height: auto;
 }
 
 .main-text h1 {
@@ -107,18 +133,23 @@ body {
 .dwn-btn:hover {
   transform: scale(1.1);
 }
+/* First Section End */
 
-.yoga-girl {
-  margin-right: 3vw;
-  width: 100%;
-}
-
+/* Second Section Start */
 .images {
   width: 40vw;
   height: auto;
   text-align: center;
 }
 
+.yoga-girl {
+  margin-right: 3vw;
+  width: 100%;
+}
+/* Second Section End */
+
+
+/* Background Start*/
 .circle-img {
   position: absolute;
   z-index: -1;
@@ -126,22 +157,11 @@ body {
   left: -12vw;
   width: 50vw;
 }
+/* Background End*/
 
-.menu {
-  display: none;
-  margin-right: 1vw;
-  height: 50px;
-  width: 30px;
-  cursor: pointer;
-}
 
-.bar {
-  margin: auto;
-  height: 5px;
-  width: 30px;
-  margin-top: 5px;
-  background: rgb(236, 137, 8);
-}
+
+/* Mobile Start*/
 
 @media screen and (max-width: 500px) {
   main {
@@ -180,9 +200,12 @@ body {
     display: none;
   }
 }
+/* Mobile End*/
 
+/* Tablet Start*/
 @media screen and (max-width: 800px) {
   .nav-links {
+    display: none;
     position: absolute;
     right: 0px;
     top: 10vh;
@@ -190,12 +213,12 @@ body {
     width: 50vw;
     background: rgb(245, 246, 250);
     flex-direction: column;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    
   }
 
   .nav-active {
-    transform: translateX(0%);
+    
+    display: flex;
   }
 
   .nav-links a {
@@ -235,7 +258,9 @@ body {
   }
 
 }
+/* Tablet End*/
 
+/* Computer Start*/
 @media screen and (max-width: 1100px) and (min-width: 801px) {
   .container {
     max-width: 90vw;
@@ -289,4 +314,4 @@ body {
     font-size: 2rem;
   }
 }
-
+/* Computer End*/
