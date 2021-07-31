@@ -9,6 +9,18 @@
 .container {
   max-width: 80vw;
   margin: 0 10vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 nav {
@@ -64,8 +76,10 @@ li a:hover {
   transition: 0.1s ease-in;
 }
 
-body {
+body , html {
   overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
 .main-text {
